@@ -7,4 +7,10 @@ $(document).ready(function () {
         $('#valor-min').html(min);
     });
 
+    $('#preco-max').on('input', function () {
+        var max = $('#preco-max').val();
+        console.log(`preco-max: ${max}`);
+        $('#valor-max').html(max);
+    });
+
 });
