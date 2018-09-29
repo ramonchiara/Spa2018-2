@@ -37,6 +37,9 @@ $(document).ready(function () {
                 $('#produtos').append(`<li><a href="#${produto.id}">${produto.nome}</a> - R$ ${produto.preco}</li>`);
             }
         }
+        if ($('#produtos').html() === '') {
+            $('#produtos').append('<li class="alert alert-warning" role="alert">Nenhum produto encontrado!</li>');
+        }
     }
 
 });
